@@ -3,54 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Agustín Sciammarella Balbuena</title>
+    <title>Currículum Vitae - Agustín Sciammarella Balbuena</title>
     <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
+    <a href="#contenido-principal" class="skip-link"
+      >Saltar al contenido principal</a
+    >
+
     <div class="cv-container">
       <header>
         <img
           src="images/Foto cv.png"
-          alt="Foto de Agustín Sciammarella"
+          alt="Foto de perfil de Agustín Sciammarella Balbuena"
           class="foto-perfil"
         />
         <div class="datos-cabecera">
           <h1>Agustín Sciammarella Balbuena</h1>
-          <p class="subtitulo">Frontend Developer</p>
-          <div class="contacto-rapido">
-            <span>Buenos Aires, Argentina</span>
-            <span>•</span>
-            <span>+54 9 11 2168 1131</span>
-            <span>•</span>
-            <a href="mailto:Sciammarellaagus9@gmail.com"
-              >Sciammarellaagus9@gmail.com</a
-            >
-          </div>
+          <p class="subtitulo" lang="en">Frontend Developer</p>
+          <ul class="contacto-rapido">
+            <li>Buenos Aires, Argentina</li>
+            <li>Teléfono: +54 9 11 2168 1131</li>
+            <li>Correo: Sciammarellaagus9@gmail.com</li>
+          </ul>
         </div>
       </header>
 
-      <main>
-        <section>
-          <h2>Resumen Profesional</h2>
+      <nav aria-label="Secciones del currículum" class="nav-secciones">
+        <ul>
+          <li><a href="#titulo-resumen">Resumen</a></li>
+          <li><a href="#titulo-experiencia">Experiencia</a></li>
+          <li><a href="#titulo-educacion">Educación</a></li>
+          <li><a href="#titulo-idiomas">Idiomas</a></li>
+          <li><a href="#titulo-hobbies">Intereses</a></li>
+          <li><a href="#titulo-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <main id="contenido-principal">
+        <section aria-labelledby="titulo-resumen">
+          <h2 id="titulo-resumen">Resumen Profesional</h2>
           <p>
             Estudiante de 4º año de Ingeniería en Sistemas con formación
-            práctica en desarrollo frontend y experiencia laboral en gestión
-            operativa, atención al cliente y liderazgo de equipos. Me capacito
-            continuamente en tecnologías como React, TypeScript y SQL, validadas
-            en simulaciones de entornos laborales reales (No Country) y
-            hackatones de innovación tecnológica (NASA). Me destaco por mi
-            responsabilidad, fuertes habilidades de comunicación y por estar
-            actualmente a cargo del sistema de capacitación de pasantes en mi
-            empleo. Busco crecer profesionalmente en el mundo del software,
-            aportando valor desde la tecnología de vanguardia, el trabajo
-            colaborativo y la resolución ágil de problemas.
+            práctica en desarrollo <span lang="en">frontend</span> y experiencia
+            laboral en gestión operativa, atención al cliente y liderazgo de
+            equipos. Me capacito continuamente en tecnologías como React,
+            TypeScript y SQL, validadas en simulaciones de entornos laborales
+            reales (No Country) y hackatones de innovación tecnológica (NASA).
+            Me destaco por mi responsabilidad, fuertes habilidades de
+            comunicación y por estar actualmente a cargo del sistema de
+            capacitación de pasantes en mi empleo. Busco crecer profesionalmente
+            en el mundo del software, aportando valor desde la tecnología de
+            vanguardia, el trabajo colaborativo y la resolución ágil de
+            problemas.
           </p>
         </section>
 
-        <section>
-          <h2>Experiencia Laboral</h2>
+        <section aria-labelledby="titulo-experiencia">
+          <h2 id="titulo-experiencia">Experiencia Laboral</h2>
 
-          <div class="item-experiencia">
+          <article class="item-experiencia">
             <h3>
               Atención al Cliente, Coordinador de Operaciones y Gestor de
               Pasantías
@@ -75,10 +87,10 @@
                 galardón al mejor producto en la categoría de chocolate blanco.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="item-experiencia">
-            <h3>Frontend Developer</h3>
+          <article class="item-experiencia">
+            <h3 lang="en">Frontend Developer</h3>
             <p class="meta">
               Proyectos de desarrollo en equipo (No Country) | Nov 2024 -
               Presente | Buenos Aires, Argentina
@@ -87,7 +99,7 @@
               <li>
                 Participé en simulaciones de entornos laborales reales en la
                 plataforma No Country, colaborando en equipos internacionales
-                para el diseño y desarrollo de sitios web responsive utilizando
+                para el diseño y desarrollo de sitios web adaptables utilizando
                 React, TypeScript y SQL, optimizando la experiencia de usuario y
                 la velocidad de carga.
               </li>
@@ -98,13 +110,13 @@
               </li>
               <li>
                 Trabajé en conjunto con diseñadores UX/UI y desarrolladores
-                backend para entender los requerimientos del proyecto y
-                traducirlos en soluciones.
+                <span lang="en">backend</span> para entender los requerimientos
+                del proyecto y traducirlos en soluciones.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="item-experiencia">
+          <article class="item-experiencia">
             <h3>Participante - Innovatón de Inteligencia Artificial</h3>
             <p class="meta">Mar 2025 | Buenos Aires, Argentina</p>
             <ul>
@@ -116,10 +128,13 @@
                 colaboradores.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="item-experiencia">
-            <h3>Participante - NASA International Space Apps Challenge</h3>
+          <article class="item-experiencia">
+            <h3>
+              Participante -
+              <span lang="en">NASA International Space Apps Challenge</span>
+            </h3>
             <p class="meta">Oct 2024 | Buenos Aires, Argentina</p>
             <ul>
               <li>
@@ -128,11 +143,11 @@
                 dar respuesta a desafíos reales de la Tierra y el espacio.
               </li>
             </ul>
-          </div>
+          </article>
         </section>
 
-        <section>
-          <h2>Educación</h2>
+        <section aria-labelledby="titulo-educacion">
+          <h2 id="titulo-educacion">Educación</h2>
           <ul>
             <li>
               <strong>Ingeniería en Sistemas</strong> — Universidad CAECE (Marzo
@@ -141,16 +156,16 @@
           </ul>
         </section>
 
-        <section>
-          <h2>Idiomas</h2>
+        <section aria-labelledby="titulo-idiomas">
+          <h2 id="titulo-idiomas">Idiomas</h2>
           <ul>
             <li><strong>Español:</strong> Nativo</li>
             <li><strong>Inglés:</strong> Fluido</li>
           </ul>
         </section>
 
-        <section>
-          <h2>Hobbies e Intereses</h2>
+        <section aria-labelledby="titulo-hobbies">
+          <h2 id="titulo-hobbies">Hobbies e Intereses</h2>
           <ul>
             <li>Desarrollo web y nuevas tecnologías (React, TypeScript)</li>
             <li>
@@ -160,25 +175,34 @@
           </ul>
         </section>
 
-        <section>
-          <h2>Contacto y Redes Sociales</h2>
+        <section aria-labelledby="titulo-contacto">
+          <h2 id="titulo-contacto">Contacto y Redes Sociales</h2>
           <ul class="redes-lista">
             <li>
-              <a
-                href="https://linkedin.com/in/agustínsciammarella"
-                target="_blank"
-                >LinkedIn</a
+              <a href="https://linkedin.com/in/agust%C3%ADnsciammarella"
+                >Perfil de LinkedIn de Agustín Sciammarella</a
               >
             </li>
             <li>
-              <a href="https://github.com/SCIANMAA" target="_blank">GitHub</a>
+              <a href="https://github.com/SCIANMAA"
+                >Perfil de GitHub (SCIANMAA)</a
+              >
             </li>
             <li>
-              <a href="mailto:Sciammarellaagus9@gmail.com">Enviar Correo</a>
+              <a href="mailto:Sciammarellaagus9@gmail.com"
+                >Enviar correo electrónico a Sciammarellaagus9@gmail.com</a
+              >
             </li>
           </ul>
         </section>
       </main>
+
+      <footer>
+        <p>
+          Currículum Vitae de Agustín Sciammarella Balbuena — Sitio optimizado
+          para accesibilidad web (WCAG 1.0 AA).
+        </p>
+      </footer>
     </div>
   </body>
 </html>
